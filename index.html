@@ -6,14 +6,21 @@
   <title>Wiki SEEC/GO — Assistente</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { width: 100%; height: 100vh; background: transparent; }
+    html, body { width: 100%; height: 100%; overflow: hidden; background: #202020; }
+    #denser-container {
+      width: 100%;
+      height: 100vh;
+    }
   </style>
 </head>
 <body>
+  <div id="denser-container"></div>
+
   <script type="module">
     import Chatbot from "https://cdn.jsdelivr.net/npm/@denserai/embed-chat@1/dist/web.min.js";
     Chatbot.init({
       chatbotId: "chatbot_j86zai30c63avzoza2hik",
+      targetId: "denser-container",
     });
   </script>
 </body>
